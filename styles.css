@@ -8,7 +8,7 @@ body {
 	height: 100vh;
 	margin: 0;
 	overflow: hidden;
-	background: #6441A4;
+	background: hsl(261deg, 43%, 35%);
 }
 
 iframe {
@@ -29,8 +29,8 @@ iframe {
 .matchup-box {
 	position: relative;
 	margin: auto;
-	width: 85%;
-	height: 85%;
+	width: 100%;
+	height: 100%;
 
 	animation: hover 10s ease-in-out infinite;
 }
