@@ -1,6 +1,6 @@
 @font-face {
 	font-family: garnity;
-	src: url(fonts/garnity.woff);
+	src: url(../fonts/garnity.woff);
 }
 
 html {
@@ -13,7 +13,7 @@ body {
 	height: 100vh;
 	margin: 0;
 	overflow: hidden;
-	color: hsl(261deg, 65%, 85%);
+	color: #9147ff;
 	font-family: garnity;
 }
 
@@ -34,10 +34,10 @@ body {
 .info-container {
 	display: grid;
 	margin: auto;
-	width: 55vmin;
-	height: 47vmin;
+	width: 55.2vmin;
+	transform: translate(-0.2vmin, 0.8vmin);
 	grid-template-columns: 45% 10% 45%;
-	grid-template-rows: 9% 23% 9% 5% 10% 10% 10% 10% 10% 10%;
+	grid-template-rows: 7% 26% 11% 3% 10% 10% 10% 10% 10% 10%;
 	grid-auto-flow: column;
 	z-index: 1;
 }
@@ -46,41 +46,68 @@ body {
 	font-size: 5vmin;
 	margin: auto;
 	letter-spacing: 0.4vmin;
-	text-shadow: -3px 3px #9147ff, -2px 2px #9147ff, -1px 1px #9147ff;
 }
 
 .team-name {
-	font-size: 4.5vmin;
+	font-size: 5vmin;
 	font-weight: bold;
-	letter-spacing: 0.4vmin;
-	text-shadow: -3px 3px #9147ff, -2px 2px #9147ff, -1px 1px #9147ff;
+	letter-spacing: 0.2vmin;
 	margin: auto;
 	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
+.team-name.left {
+	position: relative;
+	left: 3vmin;
+	text-align: center;
+	margin: auto;
+}
+
+.team-name.right {
+	position: relative;
+	right: 3vmin;
+	text-align: center;
+	margin: auto;
+}
+
 .record {
+	width: 100%;
 	font-size: 3vmin;
 	font-weight: bold;
 	letter-spacing: 0.4vmin;
-	text-shadow: -3px 3px #9147ff, -2px 2px #9147ff, -1px 1px #9147ff;
 	margin: auto;
 	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	padding: 0.5vmin 0 0.2vmin 0;
+	background: #9147ff;
+	color: white;
+}
+
+.record.left {
+	position: relative;
+	left: 3vmin;
+	text-align: center;
+	margin: auto;
+}
+
+.record.right {
+	position: relative;
+	right: 3vmin;
+	text-align: center;
+	margin: auto;
 }
 
 .player {
 	font-size: 3vmin;
-	letter-spacing: 0.4vmin;
-	text-shadow: -1px 1px #9147ff;
+	letter-spacing: 0.1vmin;
 	margin: auto;
 	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-
 
 .left {
 	margin-right: 1vmin;

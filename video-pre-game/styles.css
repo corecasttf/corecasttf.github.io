@@ -1,0 +1,82 @@
+@font-face {
+	font-family: garnity;
+	src: url(../fonts/garnity.woff);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	background: hsl(261deg, 43%, 35%);
+	font-family: garnity;
+}
+
+iframe {
+	border: none;
+}
+
+.background-video {
+	position: absolute;
+	width: 100vw;
+	min-height: 100vh;
+
+	opacity: 0;
+	animation: fade-in 2s linear;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+
+.matchup-box {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+
+	animation: hover 10s ease-in-out infinite;
+}
+
+.matchup-box.corner {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 50vmin;
+	height: 50vmin;
+	transition: left 1s, right 1s, margin 1s, width 1s, height 1s;
+}
+
+.playing-text {
+	font-size: 5vmin;
+	font-weight: bold;
+	letter-spacing: 0.4vmin;
+	text-shadow: -3px 3px #9147ff, -2px 2px #9147ff, -1px 1px #9147ff;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hover {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(0, -1.5vmin);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
