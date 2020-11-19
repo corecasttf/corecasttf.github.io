@@ -1,0 +1,77 @@
+@font-face {
+	font-family: garnity;
+	src: url(../fonts/garnity.woff);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	color: white;
+	font-family: garnity;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+
+	background: #9147ff;
+	width: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+
+	font-size: 5vmin;
+	font-weight: bold;
+	letter-spacing: 0.3vmin;
+	text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+	filter: drop-shadow(0px 6px #6441A4);
+}
+
+.blu {
+	position: relative;
+	text-align: right;
+	padding: 0.5vmin 0 0.2vmin 0;
+}
+
+.blu .score {
+	color: hsl(204deg, 100%, 64%);
+	padding-right: 1.5vmin;
+}
+
+.red {
+	position: relative;
+	text-align: left;
+	padding: 0.5vmin 0 0.2vmin 0;
+}
+
+.red .score {
+	color: hsl(359deg, 100%, 64%);
+	padding-left: 1.5vmin;
+}
+
+.bar {
+	padding: 1.1vmin 0vmin 0.8vmin 1vmin;
+}
+
+
+.blu .bar {
+	background: hsl(204deg, 100%, 64%);
+}
+
+.red .bar {
+	background: hsl(359deg, 100%, 64%);
+}
+
+.score {
+	text-shadow: -5px 5px #6441A4, -4px 4px #6441A4, -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+	padding: 1.1vmin 3vmin 0.8vmin 3vmin;
+	background: hsl(261deg, 43%, 35%);
+}
