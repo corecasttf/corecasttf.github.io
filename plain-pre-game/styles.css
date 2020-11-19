@@ -1,3 +1,8 @@
+@font-face {
+	font-family: garnity;
+	src: url(../fonts/garnity.woff);
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -9,6 +14,7 @@ body {
 	margin: 0;
 	overflow: hidden;
 	background: hsl(261deg, 43%, 35%);
+	font-family: garnity;
 }
 
 iframe {
@@ -29,8 +35,8 @@ iframe {
 .matchup-box {
 	position: relative;
 	margin: auto;
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 
 	animation: hover 10s ease-in-out infinite;
 }
@@ -42,6 +48,26 @@ iframe {
 	width: 50vmin;
 	height: 50vmin;
 	transition: left 1s, right 1s, margin 1s, width 1s, height 1s;
+}
+
+.header {
+	position: absolute;
+	background: hsl(261deg, 43%, 35%);
+	width: 100%;
+	padding: 0.5vmin 1.3vmin 0.2vmin 1.5vmin;
+	z-index: 1;
+	box-sizing: border-box;
+
+	font-size: 5vmin;
+	font-weight: bold;
+	letter-spacing: 0.3vmin;
+	color: #9147ff;
+	text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+}
+
+.header.next-up {
+	top: 0;
+	text-align: left;
 }
 
 @keyframes fade-in {
