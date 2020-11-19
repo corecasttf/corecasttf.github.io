@@ -38,16 +38,7 @@ iframe {
 	width: 90%;
 	height: 90%;
 
-	animation: hover 10s ease-in-out infinite;
-}
-
-.matchup-box.corner {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 50vmin;
-	height: 50vmin;
-	transition: left 1s, right 1s, margin 1s, width 1s, height 1s;
+	/* animation: hover 10s ease-in-out infinite; */
 }
 
 .header {
