@@ -75,3 +75,7 @@ body {
 	padding: 1.1vmin 3vmin 0.8vmin 3vmin;
 	background: hsl(261deg, 43%, 35%);
 }
+
+.team-name {
+	cursor: pointer;
+}
