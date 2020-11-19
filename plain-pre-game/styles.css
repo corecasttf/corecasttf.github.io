@@ -62,7 +62,7 @@ iframe {
 	font-weight: bold;
 	letter-spacing: 0.3vmin;
 	color: white;
-	/* text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4; */
+	text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
 	filter: drop-shadow(-1px 1px #6441A4) drop-shadow(-2px 2px #6441A4) drop-shadow(-3px 3px #6441A4);
 }
 
@@ -83,7 +83,6 @@ iframe {
 	font-weight: bold;
 	letter-spacing: 0.3vmin;
 	color: #6441A4;
-	/* text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4; */
 }
 
 @keyframes fade-in {
