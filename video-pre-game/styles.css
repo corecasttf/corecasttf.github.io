@@ -44,7 +44,7 @@ iframe {
 .matchup-box.corner {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 0.5vmin;
 	width: 50vmin;
 	height: 50vmin;
 }
