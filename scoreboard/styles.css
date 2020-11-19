@@ -74,8 +74,11 @@ body {
 	text-shadow: -5px 5px #6441A4, -4px 4px #6441A4, -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
 	padding: 1.1vmin 3vmin 0.8vmin 3vmin;
 	background: hsl(261deg, 43%, 35%);
+	cursor: pointer;
+	user-select: none;
 }
 
 .team-name {
 	cursor: pointer;
+	user-select: none;
 }
