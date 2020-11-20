@@ -20,7 +20,7 @@ for (let scoreElem of scoreElements) {
 	});
 }
 
-// Map scrores.
+// Map scores.
 let mapNameElements = document.getElementsByClassName('map-name');
 let mapScoreElements = document.getElementsByClassName('map-score');
 let mapTeamScoreElements = document.getElementsByClassName('map-team-score');

@@ -1,0 +1,207 @@
+@font-face {
+	font-family: garnity;
+	src: url(../fonts/garnity.woff);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	background: hsl(261deg, 43%, 35%);
+	font-family: garnity;
+}
+
+iframe {
+	border: none;
+}
+
+.background-video {
+	position: absolute;
+	width: 100vw;
+	min-height: 100vh;
+
+	opacity: 0;
+	animation: fade-in 2s linear;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+
+.matchup-box {
+	position: relative;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+
+	/* animation: hover 10s ease-in-out infinite; */
+}
+
+.header {
+	position: absolute;
+	background: #9147ff;
+	width: 100%;
+	padding: 0.5vmin 1.3vmin 0.2vmin 1.5vmin;
+	z-index: 1;
+	box-sizing: border-box;
+
+	font-size: 5vmin;
+	font-weight: bold;
+	letter-spacing: 0.3vmin;
+	color: white;
+	text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+	filter: drop-shadow(0px 6px #6441A4);
+}
+
+.header.next-up {
+	top: 0;
+	text-align: left;
+}
+
+.team {
+	cursor: pointer;
+}
+
+.branding {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0.5vmin 1.3vmin 0.2vmin 1.5vmin;
+	z-index: 1;
+	box-sizing: border-box;
+
+	font-size: 5vmin;
+	font-weight: bold;
+	letter-spacing: 0.3vmin;
+	color: #6441A4;
+}
+
+.caster-tile-container {
+	position: absolute;
+	right: 2vmin;
+	bottom: 2vmin;
+}
+
+.caster-tile {
+	position: relative;
+	width: 15vmin;
+	padding: 2vmin 2vmin 4vmin 2vmin;
+	background: #9147ff;
+	filter: drop-shadow(-1px 1px #6441A4) drop-shadow(-2px 2px #6441A4) drop-shadow(-3px 3px #6441A4);
+
+	margin-top: 2vmin;
+}
+
+.caster-tile img {
+	width: 100%;
+	height: 100%;
+}
+
+.caster-tile .name {
+	position: absolute;
+	left: 2vmin;
+	right: 2vmin;
+	bottom: 0.5vmin;
+
+	text-align: center;
+	font-size: 1.5vmin;
+	color: white;
+	text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+}
+
+.mat-space {
+	display: grid;
+	margin: auto;
+	width: 100%;
+	height: 45%;
+}
+
+#winner {
+	display: none;
+	margin: auto;
+
+	color: white;
+	font-size: 8vmin;
+	text-shadow: -6px 6px #6441A4, -5px 5px #6441A4, -4px 4px #6441A4, -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+	user-select: none;
+}
+
+
+.map-scores {
+	display: grid;
+	margin: auto;
+
+	color: white;
+	font-size: 5vmin;
+	text-shadow: -3px 3px #6441A4, -2px 2px #6441A4, -1px 1px #6441A4;
+	user-select: none;
+
+	grid-template-columns: 1fr 14vmin;
+	grid-template-rows: repeat(3, 1fr);
+
+	background: #9147ff;
+	padding: 3vmin;
+	filter: drop-shadow(-1px 1px #6441A4) drop-shadow(-2px 2px #6441A4) drop-shadow(-3px 3px #6441A4);
+}
+
+.map-name {
+	cursor: pointer;
+}
+
+.map-name.strike-through {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.map-score {
+	margin-left: 2.5vmin;
+	visibility: hidden;
+}
+
+.map-score.show {
+	visibility: visible;
+}
+
+.map-team-score {
+	cursor: pointer;
+}
+
+/*
+TODO: Find a good trophy icon.
+.trophy {
+	width: 11vmin;
+	height: 11vmin;
+	background-image: url(trophy.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: invert() drop-shadow(-1px 1px #6441A4) drop-shadow(-2px 2px #6441A4) drop-shadow(-3px 3px #6441A4);
+} */
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hover {
+	0% {
+		transform: translate(0, 2.5vmin);
+	}
+
+	50% {
+		transform: translate(0, 1vmin);
+	}
+
+	100% {
+		transform: translate(0, 2.5vmin);
+	}
+}
